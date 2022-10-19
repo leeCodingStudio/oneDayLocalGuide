@@ -16,7 +16,7 @@
 ### 1 : 현재 팀 레포에서 Fork 한 후, 개인 레포에서 sync
 
 ```git
-https://github.com/jsp-team02/oneDayLocalGuide.git
+https://github.com/jsp-team02/oneDayLocalGuide
 ```
 
 ### 2 : 팀명과 동일한 폴더 생성 후, Git Bash에서 해당 명력어로 Git Clone
@@ -69,22 +69,18 @@ git status
 
 ### 2 : Git Add
 
-#### 2-1 : 모든 파일 staging
+#### 2-1 : 특정 파일만 staging area로 올리기
 
-```git
-git add .
-```
-
-#### 2-2 : 모든 파일 staging
+커밋 메시지를 하나씩 작성해야할 때
 
 ```git
 git add 파일명.확장자
 ```
 
-### 3 : Git status 확인
+#### 2-2 : 모든 파일을 staging area로 올리기
 
 ```git
-git status
+git add .
 ```
 
 ### 3 : Git Commit
