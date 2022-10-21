@@ -253,7 +253,7 @@ span.login-bold{
     padding: 0;
     border: 0;
     cursor: pointer;
-    background-image: url(/loginPage/img/hwasal.svg);
+    background-image: url(/oneDayLocalGuide/mainpage/loginPage/img/hwasal.svg);
 }
 
 #left-bottom-info{
@@ -571,7 +571,7 @@ div.footer-link-list{
 #kakao{
     width: 60px;
     height: 60px;
-    background-image: url(/loginPage/img/kakao.svg);
+    background-image: url(/oneDayLocalGuide/mainpage/loginPage/img/kakao.svg);
 }
 
 #kakao-text{
