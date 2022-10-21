@@ -19,7 +19,7 @@
 https://github.com/jsp-team02/oneDayLocalGuide
 ```
 
-### 2 : 팀명과 동일한 폴더 생성 후, Git Bash에서 해당 명력어로 Git Clone
+### 2 : 팀명과 동일한 폴더 생성 후, Git Bash에서 해당 명령어로 Git Clone
 
 ```git
 git clone https://github.com/jsp-team02/oneDayLocalGuide.git .
