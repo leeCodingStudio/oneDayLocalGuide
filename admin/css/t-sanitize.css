@@ -42,6 +42,8 @@ html {
   tab-size: 4;
   -webkit-tap-highlight-color: transparent;
   -ms-text-size-adjust: 100%;
+  /* text-size-adjust 추가 */
+  text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   word-break: break-word;
 }
@@ -330,4 +332,11 @@ textarea,
 [aria-hidden="false"][hidden]:not(:focus) {
   clip: rect(0, 0, 0, 0);
   position: absolute;
+}
+/* details, summary 추가 */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
 }
