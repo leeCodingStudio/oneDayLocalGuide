@@ -9,63 +9,84 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header>
-      <div class="page-nav">관리자 홈</div>
+    <header class="page-header">
+      <div class="page-info">
+        <ul>
+          <li class="page-info__detail">관리자 홈</li>
+        </ul>
+      </div>
     </header>
-    <aside>
-      <div class="aside-header">T2m T2s Admin</div>
+    <aside class="sidebar">
+      <header class="sidebar-header"><h1>T2m T2s Admin</h1></header>
       <nav>
         <ul>
-          <li class="nav-menu current-page"><a href="">관리자 홈</a></li>
-          <li class="nav-menu">
-            <a href="javascript:void(0)">회원관리</a>
-            <ul class="nav-sub-menu">
-              <li class="sub-menu__item">회원정보</li>
-              <li class="sub-menu__item">휴면회원</li>
-              <li class="sub-menu__item">차단회원</li>
-            </ul>
+          <li>
+            <details>
+              <summary class="nav-menu menu--current">관리자 홈</summary>
+            </details>
           </li>
-          <li class="nav-menu">
-            <a href="">컨텐츠관리</a>
-            <ul class="nav-sub-menu">
-              <li class="sub-menu__item">가이드목록</li>
-              <li class="sub-menu__item">후기목록</li>
-            </ul>
+          <li>
+            <details>
+              <summary class="nav-menu">회원관리</summary>
+              <ul class="nav-menu-submenu">
+                <li class="submenu__item">회원정보</li>
+                <li class="submenu__item">휴면회원</li>
+                <li class="submenu__item">차단회원</li>
+              </ul>
+            </details>
           </li>
-          <li class="nav-menu">
-            <a href="">문의관리</a>
-            <ul class="nav-sub-menu">
-              <li class="sub-menu__item">문의관리</li>
-              <li class="sub-menu__item">분쟁관리</li>
-            </ul>
+          <li>
+            <details>
+              <summary class="nav-menu">컨텐츠관리</summary>
+              <ul class="nav-menu-submenu">
+                <li class="submenu__item">가이드목록</li>
+                <li class="submenu__item">후기목록</li>
+              </ul>
+            </details>
           </li>
-          <li class="nav-menu">
-            <a href="">공지/FAQ 관리</a>
-            <ul class="nav-sub-menu">
-              <li class="sub-menu__item">공지사항</li>
-              <li class="sub-menu__item">FAQ</li>
-            </ul>
+          <li>
+            <details>
+              <summary class="nav-menu">문의관리</summary>
+              <ul class="nav-menu-submenu">
+                <li class="submenu__item">문의관리</li>
+                <li class="submenu__item">분쟁관리</li>
+              </ul>
+            </details>
           </li>
-          <li class="nav-menu">
-            <a href="">통계/분석</a>
-            <ul class="nav-sub-menu">
-              <li class="sub-menu__item">사용자통계</li>
-            </ul>
+          <li>
+            <details>
+              <summary class="nav-menu">공지/FAQ관리</summary>
+              <ul class="nav-menu-submenu">
+                <li class="submenu__item">공지사항</li>
+                <li class="submenu__item">FAQ</li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="nav-menu">통계/분석</summary>
+              <ul class="nav-menu-submenu">
+                <li class="submenu__item">사용자통계</li>
+              </ul>
+            </details>
           </li>
         </ul>
       </nav>
-      <div class="login">현재 로그인 계정</div>
+      <div class="user-info">현재 로그인 계정</div>
     </aside>
-    <main class="container">
-      <article class="__item __item1">연간 목표, 월간 목표</article>
-      <article class="__item __item2">오늘의 사용자 수, 게시글 작성 수</article>
-      <article class="__item __item3">TODO TODAY</article>
-      <article class="__item __item4">월별 통계</article>
-      <article class="__item __item5">신규 글 목록</article>
-      <article class="__item __item6">신규 후기 목록</article>
-      <article class="__item __item7">신규 문의 내역</article>
-      <article class="__item __item8">신규 분쟁 접수</article>
-      <article class="__item __item9">기타 통계 곡선</article>
+    <main class="module-container">
+      <article class="module module--resolution">연간 목표, 월간 목표</article>
+      <article class="module module--daily-summary">
+        오늘의 사용자 수, 게시글 작성 수
+      </article>
+      <article class="module module--todo-today">TODO TODAY</article>
+      <article class="module module--monthly-statistics">월별 통계</article>
+      <article class="module module--new-articles">신규 글 목록</article>
+      <article class="module module--new-reviews">신규 후기 목록</article>
+      <article class="module module--new-qna">신규 문의 내역</article>
+      <article class="module module--new-dispute">신규 분쟁 내역</article>
+      <article class="module module--closed-qna">문의 해결 내역</article>
+      <article class="module module--closed-dispute">분쟁 해결 내역</article>
     </main>
   </body>
   <script src="./js/index.js"></script>
