@@ -417,9 +417,8 @@ span.login-bold{
 
 
 
+/* --------------------footer-------------------- */
 
-
-/* ----------------------------------------footer----------------------------------- */
 footer{
     position: relative;
     /* width: 1690.67px; */
@@ -428,7 +427,7 @@ footer{
     background-color: #1c1c1c;
     display: flex;
     justify-content: center;
-    /* padding-bottom: 48px; */
+    padding-bottom: 48px;
     margin: 0;
     padding: 0;
     border: 0;
@@ -569,9 +568,9 @@ div.footer-link-list{
 }
 
 #kakao{
+    background-image: url(./img/kakaoChat.svg);
     width: 60px;
     height: 60px;
-    background-image: url(/oneDayLocalGuide/mainpage/loginPage/img/kakao.svg);
 }
 
 #kakao-text{
@@ -618,7 +617,7 @@ div.footer-link-list{
     font-weight: 400;
     line-height: 22px;
     margin-top: 0;
-    margin-left: 28px;
+    margin-left: 20px;
     margin-right: 0;
     color: #cbcbcb;
     padding: 0;
@@ -636,7 +635,7 @@ div.footer-link-list{
     justify-content: space-between;
     align-items: center;
     vertical-align: baseline;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 24px;
     color: #838383;
@@ -651,6 +650,7 @@ div.footer-link-list{
     padding: 0;
     border: 0;
     display: flex;
+    left: 0;
 }
 
 .menuTwo{
@@ -713,7 +713,8 @@ div.footer-link-list{
 }
 
 .menuSix{
-    width: 334.229px;
+    /* width: 334.229px; */
+    width: 30.5%;
     height: 24px;
     font-size: 14px;
     font-weight: 400;
@@ -721,6 +722,8 @@ div.footer-link-list{
     color: #838383;
     /* margin-left: 170px; */
     margin-left: 15.5%;
+    position: relative;
+    right: -50px;
 }
 
 span.bold{
