@@ -4,7 +4,9 @@ body{
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    background-image: url(./img/baegyung01.png);
+    /* background-image: url(./img/baegyung02.png); */
 }
 
 #login-header{
@@ -51,7 +53,7 @@ body{
 
 #login-content{
     width: 100%;
-    height: 1000px;
+    height: 1400px;
     display: flex;
     justify-content: space-between;
     /* padding: 0 16px; */
@@ -78,14 +80,15 @@ body{
     position: absolute;
     top: 11%;
     left: 290.247px;
-    width: 500px;
-    min-height: 780px;
+    width: 400px;
+    /* min-height: 780px; */
+    height: 1150px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 24px #00000014;
     margin: 0 auto;
     display: block;
-    /* padding: 0 50px; */
+    padding: 0 50px;
 }
 
 
@@ -100,7 +103,7 @@ body{
 #left-content{
     width: 400px;
     height: 364px;
-    padding: 0 50px;
+    /* padding: 50px 0; */
     margin: 0;
     border: 0;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
@@ -148,7 +151,250 @@ span.login-bold{
     border: 0;
 }
 
-#kakao-login{
+#form-wrapper{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    width: 400px;
+    height: 1218px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    /* background-color: aqua; */
+}
+
+.label-wrapper{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -.04em;
+    line-height: 20px;
+    display: block;
+    color: #838383;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: default;
+    width: 400px;
+    height: 20px;
+    margin-top: 40px;
+}
+
+.label-id{
+    margin-top: 0;
+}
+
+.input-infor{
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -.04em;
+    line-height: 26px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20% 6px 10px;
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+    box-shadow: none;
+    /* ---- */
+    border-radius: 0;
+    appearance: none;
+    font-style: normal;
+    font-stretch: normal;
+    text-rendering: auto;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+
+}
+
+.warning{
+    /* margin-top: 8px; */
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -.04em;
+    color: #d91d1d;
+    padding: 0;
+    border: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 400px;
+    height: 12px;
+}
+
+input::placeholder{
+    color: #CBCBCB;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 16px;
+}
+
+#gender-wrapper{
+    margin-top: 38px;
+    padding: 0;
+    border: 0;
+    display: block;
+    width: 400px;
+    height: 58px;
+    /* background-color: aquamarine; */
+}
+
+#gender{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -.04em;
+    line-height: 20px;
+    display: block;
+    color: #838383;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 400px;
+    height: 20px;
+}
+
+#gender-check-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 14px;
+    padding: 0;
+    border: 0;
+    width: 400px;
+    height: 24px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+/* #man{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    cursor: pointer;
+    width: 56.167px;
+    height: 24px;
+}
+
+
+
+#woman{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    cursor: pointer;
+    width: 56.167px;
+    height: 24px;
+}
+
+#gender-checkbox-man{
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    align-self: center;
+    position: relative;
+    left: 0;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+} */
+
+.gender-check{
+    margin-right: 10px;
+    /* width: 16px;
+    height: 16px; */
+    
+}
+
+[type="radio"]{
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+[type="radio"]:checked{
+    border: 0.4em solid #1c1c1c;
+}
+
+[type="radio"]:hover{
+    box-shadow: 0 0 0 max(4px, 0.2em) silver;
+    cursor: pointer;
+}
+
+.gender-mark{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -.04em;
+    line-height: 24px;
+    color: #1c1c1c;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+button#complete-button{
+    background-color: #cbcbcb;
+    border: none;
+    color: #fff;
+    cursor: default;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -.04em;
+    line-height: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 400px;
+    position: relative;
+    outline: none;
+    padding: 0;
+    appearance: auto;
+    text-rendering: auto;
+    text-transform: none;
+    text-indent: 0px;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    margin-top: 50px;
+}
+
+#terms{
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -.04em;
+    line-height: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #1c1c1c;
+    padding: 0;
+    border: 0;
+    display: block;
+    width: 400px;
+    height: 40px;
+}
+
+a{
+    text-decoration: underline;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* #kakao-login{
     font-weight: 400;
     font-size: 18px;
     letter-spacing: -.04em;
@@ -252,8 +498,8 @@ span.login-bold{
     border: 0;
     cursor: pointer;
     /* background-image: url(/oneDayLocalGuide/mainpage/loginPage/img/hwasal.svg); */
-    background-image: url(./img/hwasal.svg);
-}
+    /* background-image: url(./img/hwasal.svg);
+} */
 
 #left-bottom-info{
     position: absolute;

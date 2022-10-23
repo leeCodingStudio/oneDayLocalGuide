@@ -10,7 +10,7 @@
 <body>
     <div id="login-header">
         <div id="logo-wrapper">
-            <div id="logo">WISELY</div>
+            <div id="logo">TEAM02</div>
             <!-- <div id="logo">TEAM02</div> -->
         </div>
     </div>
@@ -21,7 +21,41 @@
                     <div id="title-wrapper">
                         <div id="title">처음이시군요<span class="login-bold"><br>가입을 진행합니다.</span></div>
                     </div>
-                    
+                    <form action="" id="form-wrapper">
+                        <label for="" class="label-wrapper label-id">아이디</label>
+                        <input type="text" class="input-infor" placeholder="아이디(6자 이상)">
+                        <p class="warning">아이디는 필수 입력 창입니다.</p>
+                        <label for="" class="label-wrapper">비밀번호</label>
+                        <input type="text" class="input-infor" placeholder="비밀번호(6자 이상)">
+                        <p class="warning">비밀번호는 필수 입력 창입니다.</p>
+                        <label for="" class="label-wrapper">휴대폰번호</label>
+                        <input type="text" class="input-infor" placeholder="휴대폰 번호('-'제외)">
+                        <p class="warning">휴대폰번호는 필수 입력 창입니다.</p>
+                        <label for="" class="label-wrapper">생년월일 6자리</label>
+                        <input type="text" class="input-infor" placeholder="예: 990101">
+                        <p class="warning">만 14세 미만 여부 확인을 위한 필수 입력 값입니다.</p>
+                        <label for="" class="label-wrapper">이름</label>
+                        <input type="text" class="input-infor" placeholder="이름">
+                        <p class="warning">이름은 필수 입력 창입니다.</p>
+                        <div id="gender-wrapper">
+                            <div id="gender">성별</div>
+                            <div id="gender-check-wrapper">
+                                <label><input type="radio" name="성별" value="m" class="gender-check"><span class="gender-mark">남자</span> </label>
+                                <div style="width: 45px;"></div>
+                                <label><input type="radio" name="성별" value="w" class="gender-check"><span class="gender-mark">여자</span></label>
+                                <!-- <div id="man">
+                                    <span id="gender-checkbox-man"></span>
+                                    <span class="gender-mark" >남자</span>
+                                </div>
+                                <div id="woman">
+                                    <span id="gender-checkbox-woman" style="width: 16px; height: 16px; top: 50%; transform: translateY(-50%);"></span>
+                                    <span class="gender-mark">여자</span>
+                                </div> -->
+                            </div>
+                        </div>
+                        <button id="complete-button">가입완료</button>
+                        <div id="terms">본인은 만 14세 이상이며, <a>이용약관</a>,<a>개인정보 수집 및 이용</a>,<br><a>개인정보 제공 내용</a>,<a>전자금융거래 약관</a>을 확인 하였으며, 동의합니다.</div>
+                    </form>
                 </div>
             </div>
         </div>

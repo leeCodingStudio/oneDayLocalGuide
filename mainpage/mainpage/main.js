@@ -16,7 +16,7 @@ const div = document.querySelector("div.banner");
 
     div.style.transform = "translate(-80vw)";
 
-    btns[0].style.background = "#D9E5FF";
+    btns[0].style.background = "black";
 
     let inter = setInterval(autoSlide, 2500);
 
@@ -36,14 +36,14 @@ const div = document.querySelector("div.banner");
             btns[count - 1].style.background = "white";
             div.style.transform = "translate(-" + 80 * (count + 1) +"vw)"
             count = 0;
-            btns[count].style.background = "#D9E5FF";
+            btns[count].style.background = "black";
             setTimeout(function(){
                 div.style.transition = "transform 0s";
                 div.style.transform = "translate(-80vw)";
             }, 500);
         }else{
             btns[count - 1].style.background = "white";
-            btns[count].style.background = "#D9E5FF";
+            btns[count].style.background = "black";
             div.style.transition = "transform 0.5s";
             div.style.transform = "translate(-" + 80 * (count + 1) +"vw)"
         }
@@ -86,7 +86,7 @@ const div = document.querySelector("div.banner");
                 }
                 temp.style.background = "white";
                 temp = btns[count];
-                btns[count].style.background = "#D9E5FF";
+                btns[count].style.background = "black";
                 inter = setInterval(autoSlide, 2500);
 
                 setTimeout(()=>{buttonCheck = true}, 500);
@@ -132,7 +132,7 @@ const div = document.querySelector("div.banner");
                 div.style.transform = "translate(-" + 80 * (count + 1) +"vw)"
                 temp.style.background = "white";
                 temp = btns[count];
-                btns[count].style.background = "#D9E5FF";
+                btns[count].style.background = "black";
                 inter = setInterval(autoSlide, 2500);
                 setTimeout(() => {numberButtonCheck = true}, 500);
             }
