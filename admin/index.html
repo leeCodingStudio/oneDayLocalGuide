@@ -9,11 +9,23 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page">
       <div class="page-info">
+        <img src="./img/icon/menubar.png" alt="icon" class="page-info__icon" />
         <ul>
-          <li class="page-info__detail">관리자 홈</li>
+          <li class="page-info__detail page-info--current">관리자 홈</li>
         </ul>
+      </div>
+      <div class="page-language">
+        <img
+          src="./img/icon/language.png"
+          alt="icon"
+          class="page-language__icon"
+        />
+        <select name="language" id="language__selector">
+          <option value="KR">&#127472;&#127479;</option>
+          <option value="EN">&#127482;&#127480;</option>
+        </select>
       </div>
     </header>
     <aside class="sidebar">
@@ -22,12 +34,27 @@
         <ul>
           <li>
             <details>
-              <summary class="nav-menu menu--current">관리자 홈</summary>
+              <summary class="nav-menu menu--current">
+                <img src="./img/icon/home.png" alt="icon" class="menu__icon" />
+                <h2>관리자 홈</h2>
+              </summary>
             </details>
           </li>
           <li>
             <details>
-              <summary class="nav-menu">회원관리</summary>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/people.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+                <h2>회원관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
               <ul class="nav-menu-submenu">
                 <li class="submenu__item">회원정보</li>
                 <li class="submenu__item">휴면회원</li>
@@ -37,16 +64,41 @@
           </li>
           <li>
             <details>
-              <summary class="nav-menu">컨텐츠관리</summary>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/contents.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+
+                <h2>컨텐츠관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
               <ul class="nav-menu-submenu">
-                <li class="submenu__item">가이드목록</li>
-                <li class="submenu__item">후기목록</li>
+                <li class="submenu__item">가이드관리</li>
+                <li class="submenu__item">후기관리</li>
               </ul>
             </details>
           </li>
           <li>
             <details>
-              <summary class="nav-menu">문의관리</summary>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/support.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+                <h2>문의관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
               <ul class="nav-menu-submenu">
                 <li class="submenu__item">문의관리</li>
                 <li class="submenu__item">분쟁관리</li>
@@ -55,7 +107,19 @@
           </li>
           <li>
             <details>
-              <summary class="nav-menu">공지/FAQ관리</summary>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/megaphone.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+                <h2>공지/FAQ관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
               <ul class="nav-menu-submenu">
                 <li class="submenu__item">공지사항</li>
                 <li class="submenu__item">FAQ</li>
@@ -64,7 +128,15 @@
           </li>
           <li>
             <details>
-              <summary class="nav-menu">통계/분석</summary>
+              <summary class="nav-menu">
+                <img src="./img/icon/chart.png" alt="icon" class="menu__icon" />
+                <h2>통계/분석</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
               <ul class="nav-menu-submenu">
                 <li class="submenu__item">사용자통계</li>
               </ul>
@@ -72,7 +144,13 @@
           </li>
         </ul>
       </nav>
-      <div class="user-info">현재 로그인 계정</div>
+      <div class="user-info">
+        <img src="./img/icon/user.png" alt="" class="user-info__img" />
+        <p class="user-info__email">
+          <span id="user-info__email--id">oneDayLocalGuideAdmin</span>
+          @gmail.com
+        </p>
+      </div>
     </aside>
     <main class="module-container">
       <article class="module module--resolution">연간 목표, 월간 목표</article>
