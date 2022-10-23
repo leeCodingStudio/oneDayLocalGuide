@@ -271,16 +271,20 @@ height: 36px;
 }
 
 .title-wrap {
-    width: 2100px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 24px #00000014;
+    border-radius: 8px;
     /* border: 1px solid yellow; */
 }
 
 .subscription {
-    width: 700px;
+    min-width: 700px;
     box-shadow: 0 0 24px #00000014;
     border-radius: 8px;
-    position: relative;
-    overflow: hidden;
+    transition: transform 0.9s;
+    /* transform: translate(-700px); */
 }
 
 .title {
@@ -326,9 +330,11 @@ button[type='button'] a {
 .write-content {
     box-shadow: 0 0 16px #00000014;
     border-radius: 8px;
-    width: 700px;
+    min-width: 700px;
     text-align: center;
     padding-top: 310px;
+    /* transform: translate(-700px); */
+    transition: transform 0.9s;
 }
 
 .write-content p {
@@ -336,7 +342,7 @@ button[type='button'] a {
 }
 
 .select-guide {
-    width: 700px;
+    min-width: 700px;
     box-shadow: 0 0 16px #00000014;
     border-radius: 8px;
     text-align: center;
