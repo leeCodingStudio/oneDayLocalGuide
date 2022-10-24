@@ -77,7 +77,9 @@ header{
     margin-right: 40px;
     position: relative;
     top: -6.5px;
+    font-weight: 700;
 }
+
 
 .one{
     display: block;
@@ -217,7 +219,8 @@ div.btns {
 div.btns .btn {
     border-radius: 30%;
     /* border: 0.5px solid #f0f0f0; */
-    border: 0.5px solid white;
+    /* border: 0.5px solid white; */
+    border: 0.0px solid white;
     width: 10px;
     height: 6px;
 }
@@ -352,7 +355,10 @@ div.btns .btn {
     padding: 0;
     border: 0;
     height: 310px;
-    background-color: #f0f0f0;
+    /* background-color: black; */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 10px 50px #00000014;
 }
 
 .item1{
