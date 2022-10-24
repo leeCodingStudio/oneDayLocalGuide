@@ -255,7 +255,7 @@ span.login-bold{
     padding: 0;
     border: 0;
     cursor: pointer;
-    background-image: url(/oneDayLocalGuide/mainpage/loginPage/img/hwasal.svg);
+    background-image: url(./img/hwasal.svg);
 }
 
 input::placeholder{
@@ -306,6 +306,18 @@ input::placeholder{
     height: 143px;
 }
 
+/* #input-email{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20% 8px 10px;
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+    outline: none;
+} */
+
 #input-email{
     color: #1c1c1c;
     font-size: 18px;
@@ -318,31 +330,16 @@ input::placeholder{
     border: none;
     border-bottom: 1px solid #cbcbcb;
     border-radius: 0;
-    box-shadow: none!important;
     font-style: normal;
     font-stretch: normal;
-    writing-mode: horizontal-tb !important;
     text-rendering: auto;
     word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
     display: inline-block;
     text-align: start;
-    appearance: auto;
     cursor: text;
-    background-color: field;
-    margin: 0em;
-    visibility: visible;
-    opacity: 1;
     height: 300px;
-    overflow: hidden;
     height: 35px;
-    border-bottom-color: #d91d1d;
-    caret-color: #d91d1d;
-    border-top: none;
-    border-left: none;
-    
+    outline: none;
 }
 
 #warning{

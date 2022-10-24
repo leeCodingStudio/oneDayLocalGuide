@@ -182,7 +182,7 @@ span.login-bold{
     margin-top: 0;
 }
 
-.input-infor{
+/* .input-infor{
     color: #1c1c1c;
     font-size: 18px;
     font-weight: 300;
@@ -193,25 +193,20 @@ span.login-bold{
     padding: 0 20% 6px 10px;
     border: none;
     border-bottom: 1px solid #cbcbcb;
-    box-shadow: none;
-    /* ---- */
-    border-radius: 0;
-    appearance: none;
-    font-style: normal;
-    font-stretch: normal;
-    text-rendering: auto;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    cursor: text;
-    background-color: field;
-    margin: 0em;
 
+} */
+
+.input-infor{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20% 8px 10px;
+    border: none;
+    border-bottom: 1px solid #cbcbcb;
+    outline: none;
 }
-
 .warning{
     /* margin-top: 8px; */
     font-size: 12px;
