@@ -1,3 +1,9 @@
-const NavMenu = document.getElementsByClassName("nav-menu");
+const PageInfoIcon = document.getElementsByClassName("page-info__icon");
+const SideBar = document.getElementsByClassName("sidebar");
 
-console.log(NavMenu[0]);
+// with (console) {
+//   log(PageInfoIcon);
+//   log(SideBar);
+// }
+
+// PageInfoIcon;
