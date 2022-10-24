@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/guide/css/write.css">
+    <link rel="stylesheet" href="/guide/css/main.css">
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet">
+    <title>write</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div id="content">
+                <div id="left">
+                    <div id="logo">TEAM02</div>
+                    <div class="menu one">당일여행</div>
+                    <div class="menu two">숙박여행</div>
+                    <div class="menu three">지역여행</div>
+                    <div class="menu four">고객센터</div>
+                </div>
+                <div id="right">
+                    <div id="rightmenu">
+                        <div id="login">로그인</div>
+                        <!-- <div id="hart-wrapper"><img src="./img/hart.png" id="hart"></div> -->
+                        <div id="member">회원가입</div>
+                    </div>
+                    <div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="row">
+                <div class="board_top">
+                    <h1>게시판 등록</h1>
+                </div>
+
+                <form action="">
+                    <div class="write_input">
+                        <div class="input_left">
+                            <div class="input_div">
+                                <label class="input_label">작성자</label>
+                                <div class="input_box">lehj2308</div>
+                            </div>
+                            <div class="input_div">
+                                <label class="input_label">제목</label>
+                                <input type="text" class="input_box">
+                            </div>
+                            <div class="input_div">
+                                <label class="input_label">날짜</label>
+                                <input type="date" class="input_date">
+                            </div>
+                            <div class="input_div">
+                                <label class="input_label">시간</label>
+                                <input type="time" class="input_box">
+                                <input type="time" class="input_box">
+                            </div>
+                            <div class="input_div">
+                                <label class="input_label">비용</label>
+                                <input type="number" class="input_box">
+                            </div>
+                            <div class="input_div">
+                                <label class="input_label">오픈카카오톡</label>
+                                <input type="text" class="input_box">
+                            </div>
+                            <div class="input_div">
+                                <label class="input_label">설명</label>
+                                <textarea class="input_box"></textarea>
+                            </div>
+                        </div>
+                        <div class="input_right">
+                            <div class="input_div">
+                                <label class="input_label">장소</label>
+                                <div id="map" style="width:100%;height:500px;"></div>
+                            </div>
+                            <div class="input_div">
+                                <input type="radio" name="category" class="category_radio">서울
+                                <input type="radio" name="category" class="category_radio">경기도
+                                <input type="radio" name="category" class="category_radio">강원도
+                                <input type="radio" name="category" class="category_radio">충청도
+                                <input type="radio" name="category" class="category_radio">전라도
+                                <input type="radio" name="category" class="category_radio">경상도
+                                <input type="radio" name="category" class="category_radio">제주도
+                                <input type="text" class="input_box">
+                            </div>
+                        </div>
+                        <div class="input_bottom">
+                            <div class="input_div">
+                                <label class="input_label">사진</label>
+                                <label for="photo1" class="photo_upload">
+                                    <div></div>
+                                </label>
+                                <label for="photo2" class="photo_upload">
+                                    <div></div>
+                                </label>
+                                <label for="photo3" class="photo_upload">
+                                    <div></div>
+                                </label>
+                                <input type="file" id="photo1" style="display:none;">
+                                <input type="file" id="photo2" style="display:none;">
+                                <input type="file" id="photo3" style="display:none;">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d79bb6b1ff2694513baa2ea1b8c1fcf4"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="/guide/js/write.js"></script>
+
+</html>
