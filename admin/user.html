@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>관리자 홈</title>
+    <title>회원관리</title>
     <link rel="stylesheet" href="./css/t-sanitize.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/user.css" />
   </head>
   <body>
     <header class="page">
       <div class="page-info">
         <img src="./img/icon/menubar.png" alt="icon" class="page-info__icon" />
         <ul>
-          <li class="page-info__detail page-info--current">관리자 홈</li>
+          <li class="page-info__detail page-info--current">회원관리</li>
         </ul>
       </div>
       <div class="page-language">
@@ -35,7 +35,7 @@
         <ul>
           <li>
             <details>
-              <summary class="nav-menu menu--current">
+              <summary class="nav-menu">
                 <a href="./index.html">
                   <img
                     src="./img/icon/home.png"
@@ -63,7 +63,7 @@
                 />
               </summary>
               <ul class="nav-menu-submenu">
-                <li class="submenu__item">
+                <li class="submenu__item menu--current">
                   <a href="./user.html">
                     <h3>회원정보</h3>
                   </a>
@@ -194,22 +194,18 @@
         <img src="./img/icon/user.png" alt="" class="user-info__img" />
         <p class="user-info__email">
           <span id="user-info__email--id">oneDayLocalGuideAdmin</span>
-          @gmail.com
+          <span>@gmail.com</span>
         </p>
       </div>
     </aside>
     <main class="module-container">
-      <article class="module--welcome">
-        <h1 class="welcome__text">안녕하세요,</h1>
-        <h1 class="welcome__user-name">한동석님.</h1>
-      </article>
       <article class="module--search">
         <div class="search__searchbox">
           <form action="" class="search__searchbox__form">
             <input
               id="searchbox"
               type="text"
-              placeholder="이 검색창을 활용해주세요"
+              placeholder="이름, 전화번호, 이메일로 검색해보세요"
             />
             <button type="button" class="search__searchbox__button">
               <img src="./img/icon/search.png" alt="" />
@@ -217,37 +213,46 @@
           </form>
         </div>
       </article>
-      <article class="module module--resolution">
-        <p class="module__title">목표</p>
-      </article>
-      <article class="module module--daily-summary">
-        <p class="module__title">요약</p>
-      </article>
-      <article class="module module--todo-today">
-        <p class="module__title">TODO TODAY</p>
-      </article>
-      <article class="module module--monthly-statistics">
-        <p class="module__title">월별 통계</p>
-      </article>
-      <article class="module module--new-articles">
-        <p class="module__title">신규 글 목록</p>
-      </article>
-      <article class="module module--new-reviews">
-        <p class="module__title">신규 후기 목록</p>
-      </article>
-      <article class="module module--new-qna">
-        <p class="module__title">신규 문의 내역</p>
-      </article>
-      <article class="module module--new-dispute">
-        <p class="module__title">신규 분쟁 내역</p>
-      </article>
-      <article class="module module--closed-qna">
-        <p class="module__title">문의 해결 내역</p>
-      </article>
-      <article class="module module--closed-dispute">
-        <p class="module__title">분쟁 해결 내역</p>
+      <article class="module module--user-summary"></article>
+      <article class="module module--user-controller"></article>
+      <article class="module module--user-list">
+        <div class="user-list__title-container">
+          <div class="user-list__title-unit">
+            <input type="checkbox" id="title__checkbox" name="checkbox-all" />
+            <ul class="user-list__title">
+              <li class="title__id">고객번호</li>
+              <li class="title__name">이름</li>
+              <li class="title__user-id">회원 ID</li>
+              <li class="title__email">이메일</li>
+              <li class="title__phone">핸드폰 번호</li>
+              <li class="title__join">가입일</li>
+              <li class="title__recent">최근 접속일</li>
+              <li class="title__status">상태</li>
+              <li class="title__detail">상세</li>
+            </ul>
+          </div>
+        </div>
+        <div class="user-list__info-container">
+          <div class="user-list__info-unit">
+            <input type="checkbox" id="user__checkbox" name="checkbox" />
+            <label for="user__checkbox" class="user__checkbox--label">
+              <ul class="user-list__info">
+                <li class="user__id">365KOREAJ</li>
+                <li class="user__name">한동석</li>
+                <li class="user__user-id">bugbug</li>
+                <li class="user__email">winterstone@cold.com</li>
+                <li class="user__phone">010-1004-5004</li>
+                <li class="user__join">2001.01.01</li>
+                <li class="user__recent">3일 전</li>
+                <li class="user__status">활성</li>
+                <li class="user__detail">20대</li>
+              </ul>
+            </label>
+          </div>
+        </div>
       </article>
     </main>
   </body>
   <script src="./js/index.js"></script>
+  <script src="./js/user.js"></script>
 </html>
