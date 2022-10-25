@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의관리</title>
+    <link rel="stylesheet" href="./css/t-sanitize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- 아래에 페이지별로 갈아 끼워야할 CSS -->
+    <link rel="stylesheet" href="./css/support.css" />
+  </head>
+  <body>
+    <header class="page">
+      <div class="page-info">
+        <img src="./img/icon/menubar.png" alt="icon" class="page-info__icon" />
+        <ul>
+          <li class="page-info__detail page-info--current">문의관리</li>
+        </ul>
+      </div>
+      <div class="page-language">
+        <img
+          src="./img/icon/language.png"
+          alt="icon"
+          class="page-language__icon"
+        />
+        <select name="language" id="language__selector">
+          <option value="KR">&#127472;&#127479;</option>
+          <option value="EN">&#127482;&#127480;</option>
+        </select>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <header class="sidebar-header"><h1>T2m T2s Admin</h1></header>
+      <nav>
+        <ul>
+          <li>
+            <details>
+              <summary class="nav-menu">
+                <a href="./index.html">
+                  <img
+                    src="./img/icon/home.png"
+                    alt="icon"
+                    class="menu__icon"
+                  />
+                  <h2 class="menu__title">관리자 홈</h2>
+                </a>
+              </summary>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/people.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+                <h2 class="menu__title">회원관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
+              <ul class="nav-menu-submenu">
+                <li class="submenu__item">
+                  <a href="./user.html">
+                    <h3>회원정보</h3>
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a href="./user.html">
+                    <h3>휴면회원</h3>
+                  </a>
+                </li>
+                <li class="submenu__item">
+                  <a href="./user.html">
+                    <h3>차단회원</h3>
+                  </a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/contents.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+                <h2 class="menu__title">컨텐츠관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
+              <ul class="nav-menu-submenu">
+                <a href="">
+                  <h3>
+                    <li class="submenu__item">가이드관리</li>
+                  </h3>
+                </a>
+                <a href="">
+                  <h3>
+                    <li class="submenu__item">후기관리</li>
+                  </h3>
+                </a>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/support.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+                <h2 class="menu__title">문의관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
+              <ul class="nav-menu-submenu">
+                <a href="./support.html">
+                  <h3>
+                    <li class="submenu__item menu--current">문의관리</li>
+                  </h3>
+                </a>
+                <a href="./support.html">
+                  <h3>
+                    <li class="submenu__item">분쟁관리</li>
+                  </h3>
+                </a>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="nav-menu">
+                <img
+                  src="./img/icon/megaphone.png"
+                  alt="icon"
+                  class="menu__icon"
+                />
+                <h2 class="menu__title">공지/FAQ관리</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
+              <ul class="nav-menu-submenu">
+                <a href="./notice.html">
+                  <h3>
+                    <li class="submenu__item">공지사항</li>
+                  </h3>
+                </a>
+                <a href="./notice.html">
+                  <h3>
+                    <li class="submenu__item">FAQ</li>
+                  </h3>
+                </a>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="nav-menu">
+                <img src="./img/icon/chart.png" alt="icon" class="menu__icon" />
+                <h2 class="menu__title">통계/분석</h2>
+                <img
+                  src="./img/icon/dropdown.png"
+                  alt="icon"
+                  class="menu__icon--drop-down"
+                />
+              </summary>
+              <ul class="nav-menu-submenu">
+                <a href="./analytics.html">
+                  <h3>
+                    <li class="submenu__item">사용자통계</li>
+                  </h3>
+                </a>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <img src="./img/icon/user.png" alt="" class="user-info__img" />
+        <p class="user-info__email">
+          <span id="user-info__email--id">oneDayLocalGuideAdmin</span>
+          <span>@gmail.com</span>
+        </p>
+      </div>
+    </aside>
+    <!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
+    <main class="module-container">
+      <article class="module--search">
+        <div class="search__searchbox">
+          <form action="" class="search__searchbox__form">
+            <input
+              id="searchbox"
+              type="text"
+              placeholder="원하시는 키워드로 찾아보세요"
+            />
+            <button type="button" class="search__searchbox__button">
+              <img src="./img/icon/search.png" alt="" />
+            </button>
+          </form>
+        </div>
+      </article>
+      <article class="module module--support-summary"></article>
+      <article class="module module--support-controller"></article>
+      <article class="module module--support-list">
+        <div class="support-list__title-container">
+          <div class="support-list__title-unit">
+            <input type="checkbox" id="title__checkbox" name="checkbox-all" />
+            <ul class="support-list__title">
+              <li class="title__id">문의번호</li>
+              <li class="title__type">문의유형</li>
+              <li class="title__user-id">회원 ID</li>
+              <li class="title__title">문의제목</li>
+              <li class="title__content">문의내용</li>
+              <li class="title__date-post">등록시간</li>
+              <li class="title__answer-check">답변여부</li>
+              <li class="title__answer-date">답변시간</li>
+              <li class="title__admin-id">관리자 ID</li>
+              <li class="title__answer">답변</li>
+            </ul>
+          </div>
+        </div>
+        <div class="support-list__info-container">
+          <div class="support-list__info-unit">
+            <input
+              type="checkbox"
+              class="support__checkbox"
+              id="hds"
+              name="checkbox"
+            />
+            <label for="hds" class="support__checkbox--label">
+              <ul class="support-list__info">
+                <li class="support__id">j634</li>
+                <li class="support__type">건의</li>
+                <li class="support__user-id">bugbug</li>
+                <li class="support__title">UI가 너무 구려요</li>
+                <li class="support__content">제 생각에는 말이죠..</li>
+                <li class="support__date-post">2022.10.17</li>
+                <li class="support__answer-check">미완료</li>
+                <li class="support__answer-date">2022.10.25</li>
+                <li class="support__admin-id">castleDragon</li>
+                <li class="support__answer">답변하기</li>
+              </ul>
+            </label>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+  <script src="./js/index.js"></script>
+  <!-- 아래에 페이지 별로 갈아 끼워야할 JS -->
+  <script src="./js/supports.js"></script>
+</html>
