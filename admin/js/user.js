@@ -45,12 +45,11 @@ const addUser = function (user, i) {
   UserInfoContainer.appendChild(newUser);
 };
 
-for (let i = 0; i < 12; i++) {
+for (let i = 0; i < 8; i++) {
   addUser(user, i);
 }
 
 // 전체 선택 체크박스
-// const checkBoxAll = document.querySelectorAll('input[name = "checkbox-all"]');
 const checkBoxAll = document.getElementsByName("checkbox-all");
 const checkBox = document.querySelectorAll('input[name = "checkbox"]');
 const checkBoxChecked = document.querySelectorAll(
@@ -59,11 +58,9 @@ const checkBoxChecked = document.querySelectorAll(
 
 const selectAll = function () {
   if (checkBoxAll[0].checked) {
-    checkBoxAll[0].checked = true;
     checkBox.forEach((e) => (e.checked = true));
   }
   if (!checkBoxAll[0].checked) {
-    checkBoxAll[0].checked = false;
     checkBox.forEach((e) => (e.checked = false));
   }
 };
@@ -71,12 +68,15 @@ const selectAll = function () {
 const checkSelectAll = function () {
   if (checkBox.length === checkBoxChecked.length) {
     checkBoxAll[0].checked = true;
-  } else {
+  } else if (checkBox.length != checkBoxChecked.length) {
     checkBoxAll[0].checked = false;
   }
+  console.log(checkBox.length);
 };
 
 checkBoxAll[0].addEventListener("click", selectAll);
 checkBox.forEach((e) => {
   e.addEventListener("click", checkSelectAll);
 });
+
+console.log(checkBoxChecked);
