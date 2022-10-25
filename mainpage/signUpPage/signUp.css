@@ -222,6 +222,8 @@ span.login-bold{
     margin-inline-end: 0px;
     width: 400px;
     height: 12px;
+    /* visibility: visible; */
+    visibility: hidden;
 }
 
 input::placeholder{
