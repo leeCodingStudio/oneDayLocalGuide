@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2게팀이지 :: 마이페이지</title>
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
-    <link rel="stylesheet" href="mypage.css">
+    <link rel="stylesheet" href="/mypage/css/mypage.css">
 </head>
 <body>
     <div class="wrap">
@@ -23,7 +23,7 @@
                     <div id="right">
                         <div id="rightmenu">
                             <div id="login">로그인</div>
-                            <div id="hart-wrapper"><img src="/jsp_project/mypage/img/hart.png" id="hart"></div>
+                            <div id="hart-wrapper"><img src="/mypage/img/hart.png" id="hart"></div>
                             <!-- <div id="member">회원가입</div> -->
                         </div>
                         <div>
@@ -38,13 +38,13 @@
                     <div class="user-box">
                         <div class="user-info">
                             <div class="user-name">USER_NAME</div>
-                            <div class="edit">수정</div>
+                            <div class="edit"><a href="/mypage/edit.html">수정</a></div>
                         </div>
                         <div class="write-box">
-                            <div class="write-guide btn">가이드 작성</div>
+                            <div class="write-guide">가이드 작성</div>
                         </div>    
                         <div class="check-box">
-                            <div class="check-guide btn">내가 작성한 가이드 확인</div>
+                            <div class="check-guide">내가 작성한 가이드 확인</div>
                         </div>
                         <div class="certify-box">
                             <div class="certify-phone">휴대폰 인증</div>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="info-wrap">
                             <div class="first">
-                                <div class="icon"><img src="/jsp_project/mypage/img/search.png"></div>
+                                <div class="icon"><img src="/mypage/img/search.png"></div>
                                 <p class="text">최적의 검색 !</p>
                             </div>
                             <div class="second">
@@ -73,42 +73,14 @@
                             </div>
                         </div>
                         <div class="search">
-                                <button type="button"><a href="#">가이드 작성</a></button>
+                                <button type="button"><a href="/guide/html/write.html">가이드 작성</a></button>
                         </div>
                     </div>
                     <div class="write-content">
                         <div class="img">
-                            <img src="/jsp_project/mypage/img/noguide.png">
+                            <img src="/mypage/img/noguide.png">
                         </div>
                         <p>작성한 가이드가 없습니다.</p>
-                    </div>
-                    <div class="select-guide">
-                        <div class="select">
-                            <select name="select-guide" id="guide">
-                                <option value="설악산">나의 설악산 가이드</option>
-                                <option value="경주">나의 경주 가이드</option>
-                                <option value="우도">나의 우도 가이드</option>
-                                <option value="부산">나의 부산 가이드</option>
-                                <option value="전주">나의 전주 가이드</option>
-                            </select>
-                            <div class="guide-content">
-                                <div>
-                                    <p>와이즐리라는 사이트를 알게되고 호기심이 생겨 외국인 가이드를 신청했다.</p>
-                                </div>
-                                <div>
-                                    <p>나의 첫번째 가이드는 전주에서 하게 되었다.</p>
-                                </div>
-                                <div>
-                                    <p>매우 재미있었고 또 하고 싶다.</p>
-                                </div>
-                                <div>
-                                    <p>마침.</p>
-                                </div>
-                                <div class="day">
-                                    <p>작성일 : 2022-10-23 &nbsp;&nbsp;&nbsp;<span>작성자 : USER_NAME</span></p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -137,7 +109,7 @@
                     </div>
                     <div id="footer-middle-right">
                         <div id="kakao-wrapper">
-                            <div id="kakao"><img src="/jsp_project/mypage/img/kakao.png" id="kakao"></div>
+                            <div id="kakao"><img src="/mypage/img/kakao.png" id="kakao"></div>
                             <div id="kakao-text">카카오톡 채널 '와이즐리컴퍼니'</div>
                         </div>
                         <div id="content-bottom">
@@ -161,5 +133,5 @@
         </footer>
     </div>
 </body>
-<script src="mypage.js"></script>
+<script src="/mypage/js/mypage.js"></script>
 </html>

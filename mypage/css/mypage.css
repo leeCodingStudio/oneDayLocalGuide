@@ -198,6 +198,11 @@ height: 36px;
     font-weight: 700;
 }
 
+.edit a {
+    text-decoration: none;
+    color: black;
+}
+
 .write-box {
     display: flex;
     /* justify-content: flex-start; */
