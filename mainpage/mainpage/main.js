@@ -1,3 +1,21 @@
+const logo = document.querySelector("#logo");
+const login = document.querySelector("#login");
+const member = document.querySelector("#member");
+
+logo.addEventListener("click", function(){
+    location.href = "main.html";
+})
+
+login.addEventListener("click", function(){
+    location.href = "../loginPage/login.html";
+})
+
+member.addEventListener("click", function(){
+    location.href = "../signUpPage/signUp.html";
+})
+
+
+/* ------------------------------banner-------------------------------*/
 const div = document.querySelector("div.banner");
     const arrows = document.querySelectorAll("div.arrow");
     const btns = document.querySelectorAll(".btn");
