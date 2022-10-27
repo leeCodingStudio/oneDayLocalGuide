@@ -160,6 +160,7 @@ span.login-bold{
     height: 1218px;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     /* background-color: aqua; */
+    position: relative;
 }
 
 .label-wrapper{
@@ -207,6 +208,19 @@ span.login-bold{
     border-bottom: 1px solid #cbcbcb;
     outline: none;
 }
+
+#eye{
+    display: inline-block;
+    background: url(./img/eye.svg);
+    /* background: blue; */
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 136px;
+}
+
 .warning{
     /* margin-top: 8px; */
     font-size: 12px;
@@ -344,6 +358,7 @@ input::placeholder{
 
 button#complete-button{
     background-color: #cbcbcb;
+    /* background-color: black; */
     border: none;
     color: #fff;
     cursor: default;
