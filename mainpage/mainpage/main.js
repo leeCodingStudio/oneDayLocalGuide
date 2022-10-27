@@ -7,11 +7,11 @@ logo.addEventListener("click", function(){
 })
 
 login.addEventListener("click", function(){
-    location.href = "/loginPage/login.html";
+    location.href = "../loginPage/login.html";
 })
 
 member.addEventListener("click", function(){
-    location.href = "/signUpPage/signUp.html";
+    location.href = "../signUpPage/signUp.html";
 })
 
 

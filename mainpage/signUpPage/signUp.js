@@ -20,7 +20,7 @@ eye.addEventListener("click", function(){
 const logo = document.querySelector("#logo");
 
 logo.addEventListener("click", function(){
-    location.href = "/mainpage/main.html";
+    location.href = "../mainpage/main.html";
 });
 
     const inputId = document.querySelector(".input-id");
